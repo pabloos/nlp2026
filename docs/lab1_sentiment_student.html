@@ -7794,7 +7794,6 @@ a.anchor-link {
   }
 </style>
 <!-- End of mermaid configuration --></head>
-<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <div style="text-align:center;padding:12px;background:#fff;border-bottom:1px solid #e0e0e0;position:sticky;top:0;z-index:999">
   <a href="https://colab.research.google.com/github/pabloos/nlp2026/blob/main/notebooks/lab1_sentiment_student.ipynb"
      target="_blank"
@@ -7804,6 +7803,7 @@ a.anchor-link {
     Abrir en Google Colab
   </a>
 </div>
+<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a1b2c3d4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
@@ -8105,11 +8105,11 @@ La referencia es el leaderboard — recárgalo para ver tu posición.</p>
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <hr/>
 <h2 id="Tips">Tips<a class="anchor-link" href="#Tips">¶</a></h2><ol>
-<li><strong>El CV local es tu brújula</strong> — si sube en CV, subirá en el servidor.</li>
+<li><strong>La evaluación local es tu brújula</strong> — si el F1 sube aquí, subirá en el servidor.</li>
 <li><strong>Mira la curva Precision-Recall</strong> — ¿el modelo falla más en positivos o en negativos?</li>
 <li><strong>Stopwords y negación</strong> — prueba <code>stop_words='english'</code> y observa si empeora. "not" es stopword pero es clave para el sentimiento.</li>
 <li><strong>Preserva puntuación</strong> — modifica <code>preprocess()</code> para conservar <code>!</code> y <code>?</code> y comprueba el efecto.</li>
-<li><strong>No te pases de tuning en train</strong> — F1 en CV bajo con F1 en train alto = overfitting.</li>
+<li><strong>No te pases de tuning</strong> — F1 alto en local con F1 bajo en el servidor = overfitting.</li>
 </ol>
 <p>¡Buena suerte! 🏆</p>
 </div>
