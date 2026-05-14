@@ -39,20 +39,23 @@ def predict(clf, text):
 # ── ejecución ─────────────────────────────────────────────────────────────────
 
 SAMPLE_TEXTS = [
-    "I can't believe how bad this movie was, total waste of time",
-]
+    "Me voy de campamento con mi familia sino me queda trabajo por hacer el viernees por la tarde",
+    "I don't like the wireless mouse at all; it doesn't come in the colour and size I chose",
+    "That was the worst adaptation of CATS ever made! I can't belive people are watching it. So sad!",
+    "It wasn't a bad day, I didn't win the lottery but I ate to my fill",
+    "La película no estuvo mal, he visto otras peores"]
 
 data = TwitterData()
 
 nb = Pipeline([
-    ("tfidf", TfidfVectorizer(max_features=50_000, ngram_range=(1, 2), sublinear_tf=True)),
-    ("nb",    ComplementNB(alpha=0.1)),
+    ("tfidf", TfidfVectorizer(max_features=100_000, ngram_range=(1, 2), sublinear_tf=True)),
+    ("nb",    ComplementNB(alpha=1.0)),
 ])
 nb.fit(data.train_texts, data.train_labels)
 
 lr = Pipeline([
-    ("tfidf", TfidfVectorizer(max_features=50_000, ngram_range=(1, 2), sublinear_tf=True)),
-    ("lr",    LogisticRegression(C=1.0, max_iter=1000, solver="saga", random_state=SEED)),
+    ("tfidf", TfidfVectorizer(max_features=100_000, ngram_range=(1, 2), sublinear_tf=True)),
+    ("lr",    LogisticRegression(C=10.0, max_iter=1000, solver="saga", random_state=SEED)),
 ])
 lr.fit(data.train_texts, data.train_labels)
 
