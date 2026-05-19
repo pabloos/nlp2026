@@ -1,0 +1,42 @@
+# ── scripts en desarrollo ──────────────────────────
+archive/
+
+# ── herramientas ───────────────────────────────────
+.claude
+.pytest_cache
+__pycache__/
+*.py[cod]
+
+# ── checkpoints & modelos ──────────────────────────
+*.pt
+*.pth
+*.safetensors
+*.joblib
+*.faiss
+*.pkl
+outputs/
+ckpt_*/
+modelo_*/
+
+# ── datos generados ─────────────────────────────────
+*_corpus.json
+cache/
+
+# ── lab1: labels privados (nunca exponer) ───────────
+labs/lab1/data/private_labels.csv
+
+# ── entornos ───────────────────────────────────────
+.env
+.venv/
+
+# ── material del profesor (no publicar) ────────────
+notebooks/*_teacher.ipynb
+notebooks/*_guia_profesor.md
+notebooks/.ipynb_checkpoints/
+notebooks/.virtual_documents/
+
+# ── IDEs / OS ──────────────────────────────────────
+.vscode/
+.idea/
+.DS_Store
+
