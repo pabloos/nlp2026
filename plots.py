@@ -375,6 +375,52 @@ def plot_embedding_tsne(coords, words, colors,
     plt.show()
 
 
+def plot_embedding_pca(grupos: dict, model, colores: dict = None) -> None:
+    """PCA 2D de grupos de palabras coloreadas por categoría.
+
+    Parameters
+    ----------
+    grupos  : {categoria: [palabras]}
+    model   : modelo gensim con interfaz .wv o directamente KeyedVectors
+    colores : {categoria: color_hex}  — asigna paleta por defecto si None
+    """
+    from sklearn.decomposition import PCA
+
+    paleta = ["#58a6ff", "#3fb950", "#f85149", "#f0a500", "#bc8cff", "#79c0ff"]
+    cats   = list(grupos.keys())
+    if colores is None:
+        colores = {c: paleta[i % len(paleta)] for i, c in enumerate(cats)}
+
+    kv = model.wv if hasattr(model, "wv") else model
+    palabras = [w for ws in grupos.values() for w in ws if w in kv]
+    if not palabras:
+        print("Ninguna palabra encontrada en el vocabulario.")
+        return
+
+    vectores = np.array([kv[w] for w in palabras])
+    coords   = PCA(n_components=2).fit_transform(vectores)
+
+    fig, ax = plt.subplots(figsize=(10, 6))
+    i = 0
+    for cat, ws in grupos.items():
+        ws_ok = [w for w in ws if w in kv]
+        n = len(ws_ok)
+        ax.scatter(coords[i:i+n, 0], coords[i:i+n, 1],
+                   color=colores[cat], label=cat, s=60, zorder=3)
+        for j, w in enumerate(ws_ok):
+            ax.annotate(w, coords[i+j], fontsize=9,
+                        xytext=(4, 4), textcoords="offset points",
+                        color=colores[cat])
+        i += n
+
+    ax.axhline(0, color="#30363d", lw=0.5)
+    ax.axvline(0, color="#30363d", lw=0.5)
+    ax.legend()
+    ax.set_title("Espacio semántico (PCA 2D)")
+    plt.tight_layout()
+    plt.show()
+
+
 def _plot_text_report(y_true, y_pred, label_names, ax):
     report_str = _skl_report(y_true, y_pred, target_names=label_names)
     ax.text(0.5, 0.5, report_str, transform=ax.transAxes,
