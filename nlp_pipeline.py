@@ -2,7 +2,9 @@
 nlp_pipeline.py — POS · NER · SVO · LDA
 """
 
+import webbrowser, pathlib
 import spacy
+from spacy import displacy
 import gensim.corpora as corpora
 from gensim.models import LdaModel
 
@@ -66,3 +68,11 @@ TOPIC_NAMES = {0: '???', 1: '???', 2: '???'}
 for i, topic in lda.print_topics(num_words=6):
     terms = [t.split("*")[1].strip().strip('"') for t in topic.split("+")]
     print(f"  T{i} '{TOPIC_NAMES[i]}': {', '.join(terms)}")
+
+# ── Visualización ─────────────────────────────────────────────────────────────
+for style, fname in [("ent", "output_ner.html"), ("dep", "output_dep.html")]:
+    html = displacy.render(example, style=style, page=True)
+    path = pathlib.Path(fname)
+    path.write_text(html, encoding="utf-8")
+    print(f"\n  {fname} guardado")
+    webbrowser.open(path.resolve().as_uri())
