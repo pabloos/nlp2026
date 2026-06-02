@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d6f9442e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e3fb7cd9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7853,7 +7853,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9e8a4cbc">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d96301ec">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7870,7 +7870,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=154a59c9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e5d864b9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8105,7 +8105,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c8853342">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d81f11e9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8115,7 +8115,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=284748df">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c4d92863">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8146,7 +8146,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=94f1f148">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e579ac12">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8160,7 +8160,7 @@ Le pedimos al LLM que genere ejemplos sinteticos.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6fa3253f">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ca07590a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8172,7 +8172,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=886800c0">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f6ad27d5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8187,26 +8187,24 @@ Tú defines que instrucciones recibe el modelo.</p>
     <span class="n">ejemplos_str</span> <span class="o">=</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Ejemplo </span><span class="si">{</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="p">[</span><span class="s1">'texto'</span><span class="p">][:</span><span class="mi">200</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
                              <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">e</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">ejemplos</span><span class="p">))</span>
 
-    <span class="c1"># TODO 1: escribe el rol del modelo (system prompt). Elige una opcion o combina elementos:</span>
-    <span class="c1">#   a) "Eres un generador de tickets de soporte tecnico realistas en espanol."</span>
-    <span class="c1">#   b) "Generas mensajes de usuarios con problemas tecnicos. Parecen escritos por personas reales."</span>
-    <span class="c1">#   c) "Eres un empleado de empresa que escribe al soporte tecnico. Mensajes breves y directos."</span>
-    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>
+    <span class="c1"># Descomenta UNA opcion:</span>
+    <span class="c1"># sistema = "Eres un generador de tickets de soporte tecnico realistas en espanol."</span>
+    <span class="c1"># sistema = "Generas mensajes de usuarios con problemas tecnicos. Parecen escritos por personas reales."</span>
+    <span class="c1"># sistema = "Eres un empleado de empresa que escribe al soporte tecnico. Mensajes breves y directos."</span>
+    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes una de arriba</span>
 
     <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
         <span class="sa">f</span><span class="s2">"Genera un ticket de soporte para la categoria '</span><span class="si">{</span><span class="n">categoria</span><span class="si">}</span><span class="s2">'.</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="sa">f</span><span class="s2">"Ejemplos reales:</span><span class="se">\n</span><span class="si">{</span><span class="n">ejemplos_str</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="s2">"Requisitos:</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="c1"># TODO 2: restriction de longitud. Elige una opcion:</span>
-        <span class="c1">#   a) "- Entre 20 y 120 palabras\n"</span>
-        <span class="c1">#   b) "- Maximo 3 frases\n"</span>
-        <span class="c1">#   c) "- Entre 30 y 80 palabras. Solo prosa, sin listas ni puntos.\n"</span>
-        <span class="s2">"TODO</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="c1"># TODO 3: restriction de tono. Elige una opcion:</span>
-        <span class="c1">#   a) "- Tono variado: puede ser formal o informal\n"</span>
-        <span class="c1">#   b) "- A veces urgente, a veces tranquilo. Evita usar siempre el mismo registro.\n"</span>
-        <span class="c1">#   c) "- Mezcla estilos: desde muy tecnico hasta coloquial. Sin emojis.\n"</span>
-        <span class="s2">"TODO</span><span class="se">\n</span><span class="s2">"</span>
+        <span class="c1"># Descomenta UNA opcion de longitud:</span>
+        <span class="c1"># "- Entre 20 y 120 palabras\n"</span>
+        <span class="c1"># "- Maximo 3 frases\n"</span>
+        <span class="c1"># "- Entre 30 y 80 palabras. Solo prosa, sin listas.\n"</span>
+        <span class="c1"># Descomenta UNA opcion de tono:</span>
+        <span class="c1"># "- Tono variado: puede ser formal o informal\n"</span>
+        <span class="c1"># "- A veces urgente, a veces tranquilo. Evita siempre el mismo registro.\n"</span>
+        <span class="c1"># "- Mezcla estilos: desde muy tecnico hasta coloquial. Sin emojis.\n"</span>
         <span class="s2">"- Sin ticket_id ni metadatos</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="s2">"Responde UNICAMENTE con este JSON, sin texto adicional:</span><span class="se">\n</span><span class="s2">"</span>
         <span class="s1">'{"texto": "el texto del ticket", "categoria": "'</span> <span class="o">+</span> <span class="n">categoria</span> <span class="o">+</span> <span class="s1">'"}'</span>
@@ -8225,7 +8223,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ced092ea">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6145f1e7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8235,7 +8233,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=aa521039">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9365692a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8278,7 +8276,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=80fd46de">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=305e64a2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8293,7 +8291,7 @@ mejorarlo para la categoria con peor F1.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6aadd97b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8c2736b4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8304,7 +8302,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=56cee6e4">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=24232fe9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8317,11 +8315,11 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 <span class="sd">    Devuelve (sistema, prompt) para clasificar un ticket en una de las 4 categorias.</span>
 <span class="sd">    El output del modelo debe ser UNA sola palabra.</span>
 <span class="sd">    """</span>
-    <span class="c1"># TODO 1: escribe el rol del clasificador. Elige una opcion:</span>
-    <span class="c1">#   a) "Eres un sistema de clasificacion de tickets de soporte tecnico."</span>
-    <span class="c1">#   b) "Clasificas mensajes de usuarios en categorias de soporte. Respuestas de una sola palabra."</span>
-    <span class="c1">#   c) "Eres un clasificador automatico. Produces etiquetas, nunca explicaciones."</span>
-    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>
+    <span class="c1"># Descomenta UNA opcion:</span>
+    <span class="c1"># sistema = "Eres un sistema de clasificacion de tickets de soporte tecnico."</span>
+    <span class="c1"># sistema = "Clasificas mensajes de usuarios en categorias de soporte. Respuestas de una sola palabra."</span>
+    <span class="c1"># sistema = "Eres un clasificador automatico. Produces etiquetas, nunca explicaciones."</span>
+    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes una de arriba</span>
 
     <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
         <span class="s2">"Clasifica el siguiente ticket en UNA de estas categorias:</span><span class="se">\n</span><span class="s2">"</span>
@@ -8331,11 +8329,10 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
         <span class="s2">"- datos: exportaciones, importaciones, perdida de datos, inconsistencias</span><span class="se">\n</span><span class="s2">"</span>
         <span class="s2">"- no_clasificable: si no encaja claramente en ninguna</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="sa">f</span><span class="s2">"Ticket:</span><span class="se">\n\"</span><span class="si">{</span><span class="n">texto_ticket</span><span class="si">}</span><span class="se">\"\n\n</span><span class="s2">"</span>
-        <span class="c1"># TODO 2: instruccion de formato de salida. Elige una opcion:</span>
-        <span class="c1">#   a) "Responde unicamente con la etiqueta en minusculas, sin explicacion ni puntuacion."</span>
-        <span class="c1">#   b) "Una sola palabra. Sin puntos, sin mayusculas, sin texto extra."</span>
-        <span class="c1">#   c) "Etiqueta unicamente. Si escribes mas de una palabra, la respuesta es invalida."</span>
-        <span class="s2">"TODO"</span>
+        <span class="c1"># Descomenta UNA opcion:</span>
+        <span class="c1"># "Responde unicamente con la etiqueta en minusculas, sin explicacion ni puntuacion."</span>
+        <span class="c1"># "Una sola palabra. Sin puntos, sin mayusculas, sin texto extra."</span>
+        <span class="c1"># "Etiqueta unicamente. Si escribes mas de una palabra, la respuesta es invalida."</span>
     <span class="p">)</span>
     <span class="k">return</span> <span class="n">sistema</span><span class="p">,</span> <span class="n">prompt</span>
 
@@ -8356,7 +8353,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4fd21dc1">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47288dc4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8366,7 +8363,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a6d4083d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4579b63d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8398,7 +8395,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4f4ab10c">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c049860">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8409,7 +8406,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=26ec90aa">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=639d7c29">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8437,7 +8434,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=33ac76c4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=029911a8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8450,7 +8447,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=60db3123">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d9512ef3">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8461,7 +8458,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5bf55d62">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bdb11f80">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8483,7 +8480,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5c1a6a8c">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6e171e4e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8496,23 +8493,19 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 <span class="sd">    Devuelve (sistema, prompt) para generar un parrafo ejecutivo de la categoria.</span>
 <span class="sd">    bloque_texto: concatenacion de hasta 2000 chars de tickets de esa categoria.</span>
 <span class="sd">    """</span>
-    <span class="c1"># TODO 1: escribe el rol del analista. Elige una opcion:</span>
-    <span class="c1">#   a) "Eres un analista de soporte. Escribes informes ejecutivos claros y directos."</span>
-    <span class="c1">#   b) "Eres un director de soporte. Resumes problemas para el CTO en lenguaje no tecnico."</span>
-    <span class="c1">#   c) "Sintetizas tickets de soporte en parrafos ejecutivos. Conciso y orientado a decisiones."</span>
-    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>
+    <span class="c1"># Descomenta UNA opcion:</span>
+    <span class="c1"># sistema = "Eres un analista de soporte. Escribes informes ejecutivos claros y directos."</span>
+    <span class="c1"># sistema = "Eres un director de soporte. Resumes problemas para el CTO en lenguaje no tecnico."</span>
+    <span class="c1"># sistema = "Sintetizas tickets de soporte en parrafos ejecutivos. Conciso y orientado a decisiones."</span>
+    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes una de arriba</span>
 
     <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
         <span class="sa">f</span><span class="s2">"Tickets de soporte de la categoria '</span><span class="si">{</span><span class="n">categoria</span><span class="si">}</span><span class="s2">':</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">bloque_texto</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">"</span>
-        <span class="c1"># TODO 2: instruccion de resumen. Elige una opcion:</span>
-        <span class="c1">#   a) "Escribe UN parrafo (3-4 frases) con los problemas principales, patrones comunes</span>
-        <span class="c1">#       y nivel de urgencia general. Solo prosa, sin listas."</span>
-        <span class="c1">#   b) "Resume en 3-4 frases: problema mas frecuente, patron detectado,</span>
-        <span class="c1">#       y si requiere accion inmediata."</span>
-        <span class="c1">#   c) "Un parrafo ejecutivo que responda: que falla, cuantos usuarios afecta,</span>
-        <span class="c1">#       que nivel de urgencia tiene. Sin listas ni bullets."</span>
-        <span class="s2">"TODO"</span>
+        <span class="c1"># Descomenta UNA opcion:</span>
+        <span class="c1"># "Escribe UN parrafo (3-4 frases) con los problemas principales, patrones comunes y nivel de urgencia. Solo prosa, sin listas."</span>
+        <span class="c1"># "Resume en 3-4 frases: problema mas frecuente, patron detectado, y si requiere accion inmediata."</span>
+        <span class="c1"># "Un parrafo ejecutivo: que falla, cuantos usuarios afecta, que urgencia tiene. Sin listas."</span>
     <span class="p">)</span>
     <span class="k">return</span> <span class="n">sistema</span><span class="p">,</span> <span class="n">prompt</span>
 
@@ -8531,7 +8524,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d11dc380">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=de5baec1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8577,7 +8570,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c1010c7d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a607fbff">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8592,7 +8585,7 @@ para que no invente nombres de clientes.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ef8100c5">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=98cd9a51">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8603,7 +8596,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1d67d36d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cf583a7f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8634,21 +8627,20 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 <span class="w">    </span><span class="sd">"""</span>
 <span class="sd">    Devuelve (sistema, prompt) para extraer los 4 campos como JSON.</span>
 <span class="sd">    """</span>
-    <span class="c1"># TODO 1: escribe el rol del extractor. Elige una opcion:</span>
-    <span class="c1">#   a) "Eres un extractor de informacion. Devuelves UNICAMENTE JSON valido, nada mas."</span>
-    <span class="c1">#   b) "Extraes datos estructurados de texto. Tu output es siempre JSON puro, sin markdown."</span>
-    <span class="c1">#   c) "Analizas tickets y produces JSON. Nunca añades texto antes ni despues del JSON."</span>
-    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>
+    <span class="c1"># Descomenta UNA opcion:</span>
+    <span class="c1"># sistema = "Eres un extractor de informacion. Devuelves UNICAMENTE JSON valido, nada mas."</span>
+    <span class="c1"># sistema = "Extraes datos estructurados de texto. Tu output es siempre JSON puro, sin markdown."</span>
+    <span class="c1"># sistema = "Analizas tickets y produces JSON. Nunca anades texto antes ni despues del JSON."</span>
+    <span class="n">sistema</span> <span class="o">=</span> <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes una de arriba</span>
 
     <span class="n">prompt</span> <span class="o">=</span> <span class="p">(</span>
         <span class="s2">"Extrae informacion del siguiente ticket. Devuelve SOLO este JSON:</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">ESTRUCTURA_JSON</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">"</span>
         <span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">DESCRIPCION_CAMPOS</span><span class="si">}</span><span class="se">\n</span><span class="s2">"</span>
-        <span class="c1"># TODO 2: instruccion de cierre. Elige una opcion:</span>
-        <span class="c1">#   a) "Responde solo con el JSON. Si el nombre no aparece tal cual en el texto: null."</span>
-        <span class="c1">#   b) "Solo el JSON, nada mas. Sin ```json, sin explicaciones, sin texto adicional."</span>
-        <span class="c1">#   c) "Importante: el output debe ser JSON parseable directamente. Sin comentarios."</span>
-        <span class="s2">"TODO</span><span class="se">\n\n</span><span class="s2">"</span>
+        <span class="c1"># Descomenta UNA opcion:</span>
+        <span class="c1"># "Responde solo con el JSON. Si el nombre no aparece tal cual en el texto: null.\n\n"</span>
+        <span class="c1"># "Solo el JSON, nada mas. Sin ```json, sin explicaciones, sin texto adicional.\n\n"</span>
+        <span class="c1"># "Importante: el output debe ser JSON parseable directamente. Sin comentarios.\n\n"</span>
         <span class="sa">f</span><span class="s2">"Ticket:</span><span class="se">\n</span><span class="si">{</span><span class="n">texto_ticket</span><span class="si">}</span><span class="s2">"</span>
     <span class="p">)</span>
     <span class="k">return</span> <span class="n">sistema</span><span class="p">,</span> <span class="n">prompt</span>
@@ -8666,7 +8658,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fdfa540b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21d3420e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8676,7 +8668,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=ec51e58e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1f28d04d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8713,7 +8705,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=96a4d74d">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e4ee7e73">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8724,7 +8716,7 @@ La celda detecta los sospechosos. Tu modificas el prompt para corregirlo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1284283f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=40a0ab56">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8760,7 +8752,7 @@ La celda detecta los sospechosos. Tu modificas el prompt para corregirlo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f70b4db8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=671761ee">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8773,7 +8765,7 @@ Generamos borradores especializados por categoria que el agente solo revisa y en
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7497dc8a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=72bf58b5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8813,7 +8805,7 @@ Generamos borradores especializados por categoria que el agente solo revisa y en
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=41872b77">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4578af18">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8824,7 +8816,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=b3099f24">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=036b5e2b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8846,29 +8838,37 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
         <span class="s2">"Si el problema es de 2FA ofrece el proceso de recuperacion de cuenta."</span>
     <span class="p">),</span>
     <span class="s2">"rendimiento"</span><span class="p">:</span> <span class="p">(</span>
-        <span class="c1"># TODO: escribe el system prompt para tickets de rendimiento. Elige una opcion:</span>
-        <span class="c1">#   a) "Eres un agente de soporte especializado en rendimiento. Pide siempre:</span>
-        <span class="c1">#       logs de consola del navegador (F12), hora aproximada del problema,</span>
-        <span class="c1">#       si es reproducible y con que frecuencia."</span>
-        <span class="c1">#   b) "Diagnosticas problemas de rendimiento. Solicita: hora exacta del error,</span>
-        <span class="c1">#       si otros usuarios lo reportan, y si es constante o intermitente.</span>
-        <span class="c1">#       Indica como abrir la consola: F12 &gt; pestaña Consola."</span>
-        <span class="c1">#   c) "Soporte de rendimiento: pide logs del navegador o sistema, navegador y SO</span>
-        <span class="c1">#       del usuario, y si el problema ocurre en todos los dispositivos o solo en uno."</span>
-        <span class="s2">"TODO"</span>
+        <span class="c1"># Descomenta UN bloque y borra "TODO" de abajo:</span>
+
+        <span class="c1"># "Eres un agente de soporte especializado en rendimiento y latencia. "</span>
+        <span class="c1"># "Pide siempre: logs de consola del navegador (F12), hora aproximada del problema, "</span>
+        <span class="c1"># "si es reproducible y con que frecuencia."</span>
+
+        <span class="c1"># "Diagnosticas problemas de rendimiento. Solicita: hora exacta del error, "</span>
+        <span class="c1"># "si otros usuarios lo reportan, y si es constante o intermitente. "</span>
+        <span class="c1"># "Indica como abrir la consola: F12 &gt; pestana Consola."</span>
+
+        <span class="c1"># "Soporte de rendimiento: pide logs del navegador o sistema, "</span>
+        <span class="c1"># "navegador y SO del usuario, y si el problema ocurre en todos los dispositivos."</span>
+
+        <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes un bloque de arriba</span>
     <span class="p">),</span>
     <span class="s2">"datos"</span><span class="p">:</span> <span class="p">(</span>
-        <span class="c1"># TODO: escribe el system prompt para tickets de datos. Elige una opcion:</span>
-        <span class="c1">#   a) "Eres un agente de soporte especializado en datos. Pide: ID de exportacion</span>
-        <span class="c1">#       o importacion, rango de fechas afectado, formato del archivo.</span>
-        <span class="c1">#       No confirmes perdida de datos sin investigar primero."</span>
-        <span class="c1">#   b) "Gestionas incidencias de datos. Necesitas: tipo de operacion</span>
-        <span class="c1">#       (exportacion/importacion/sincronizacion), fechas afectadas y formato</span>
-        <span class="c1">#       del fichero. Nunca confirmes que los datos se perdieron definitivamente."</span>
-        <span class="c1">#   c) "Soporte de datos: solicita el ID de la operacion fallida, el intervalo de</span>
-        <span class="c1">#       fechas afectado y el formato del fichero. Si hay posible perdida,</span>
-        <span class="c1">#       escala a segundo nivel antes de confirmar nada al cliente."</span>
-        <span class="s2">"TODO"</span>
+        <span class="c1"># Descomenta UN bloque y borra "TODO" de abajo:</span>
+
+        <span class="c1"># "Eres un agente de soporte especializado en datos. "</span>
+        <span class="c1"># "Pide: ID de exportacion o importacion, rango de fechas afectado, formato del archivo. "</span>
+        <span class="c1"># "No confirmes perdida de datos sin investigar primero."</span>
+
+        <span class="c1"># "Gestionas incidencias de datos. Necesitas: tipo de operacion "</span>
+        <span class="c1"># "(exportacion/importacion/sincronizacion), fechas afectadas y formato del fichero. "</span>
+        <span class="c1"># "Nunca confirmes que los datos se perdieron definitivamente."</span>
+
+        <span class="c1"># "Soporte de datos: solicita el ID de la operacion fallida, el intervalo de fechas "</span>
+        <span class="c1"># "afectado y el formato del fichero. Si hay posible perdida, "</span>
+        <span class="c1"># "escala a segundo nivel antes de confirmar nada al cliente."</span>
+
+        <span class="s2">"TODO"</span>  <span class="c1"># &lt;- borra esta linea cuando descomentes un bloque de arriba</span>
     <span class="p">),</span>
 <span class="p">}</span>
 </pre></div>
@@ -8877,7 +8877,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=cae01292">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=96c90a26">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8887,7 +8887,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=34b4d4ac">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4f8ff1d2">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8921,7 +8921,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3357ac8e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=adf24524">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8932,7 +8932,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=47f290bd">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=be1ec254">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9017,7 +9017,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2d8ee423">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b1a1616">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9075,7 +9075,7 @@ Donde el coste de equivocarse es mayor (economico, legal, reputacional)?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cb5ce1de">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2af7b680">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
