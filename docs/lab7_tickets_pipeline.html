@@ -7796,7 +7796,7 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e3fb7cd9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a204ac52">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7853,7 +7853,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d96301ec">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b9e934df">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7870,7 +7870,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=e5d864b9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=61ae99b7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -7995,6 +7995,11 @@ Al final del lab tendrá 9.</p>
                  <span class="n">on</span><span class="o">=</span><span class="s2">"ticket_id"</span><span class="p">))</span>
     <span class="n">evf</span> <span class="o">=</span> <span class="n">ev</span><span class="p">[</span><span class="n">ev</span><span class="p">[</span><span class="s2">"categoria_predicha"</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"no_clasificable"</span><span class="p">]</span>
     <span class="n">n_nc</span> <span class="o">=</span> <span class="p">(</span><span class="n">ev</span><span class="p">[</span><span class="s2">"categoria_predicha"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"no_clasificable"</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">evf</span><span class="o">.</span><span class="n">empty</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"⚠  Todos los tickets se clasificaron como no_clasificable (</span><span class="si">{</span><span class="n">n_nc</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">ev</span><span class="p">)</span><span class="si">}</span><span class="s2">)."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"   Causa mas probable: falta la instruccion de formato en el prompt."</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"   Asegurate de descomentar UNA opcion del bloque 'formato de salida'."</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ev</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Accuracy: </span><span class="si">{</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">evf</span><span class="p">[</span><span class="s1">'real'</span><span class="p">],</span><span class="w"> </span><span class="n">evf</span><span class="p">[</span><span class="s1">'categoria_predicha'</span><span class="p">])</span><span class="si">:</span><span class="s2">.2%</span><span class="si">}</span><span class="s2">  "</span>
           <span class="sa">f</span><span class="s2">"(</span><span class="si">{</span><span class="n">n_nc</span><span class="si">}</span><span class="s2"> no_clasificable ignorados)</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
     <span class="n">orden</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"acceso"</span><span class="p">,</span><span class="s2">"facturación"</span><span class="p">,</span><span class="s2">"rendimiento"</span><span class="p">,</span><span class="s2">"datos"</span><span class="p">]</span>
@@ -8105,7 +8110,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d81f11e9">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=3f25c31d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8115,7 +8120,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=c4d92863">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=32cf2c70">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8146,7 +8151,7 @@ Al final del lab tendrá 9.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e579ac12">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0b34184f">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8160,7 +8165,7 @@ Le pedimos al LLM que genere ejemplos sinteticos.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=ca07590a">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=586026bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8172,7 +8177,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f6ad27d5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2c319f3c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8223,7 +8228,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6145f1e7">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b237040">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8233,7 +8238,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9365692a">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=211b68bd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8276,7 +8281,7 @@ Tú defines que instrucciones recibe el modelo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=305e64a2">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bbb0e099">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8291,7 +8296,7 @@ mejorarlo para la categoria con peor F1.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8c2736b4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=11e13f62">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8302,7 +8307,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=24232fe9">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=78592288">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8353,7 +8358,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=47288dc4">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2b642a42">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8363,7 +8368,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4579b63d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=18bd414b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8395,7 +8400,7 @@ El output del modelo debe ser <strong>una sola palabra</strong> (la etiqueta).</
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7c049860">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=bf9dff21">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8406,7 +8411,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=639d7c29">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=5a35ded7">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8434,7 +8439,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=029911a8">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b8568705">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8447,7 +8452,7 @@ modifica <code>prompt_clasificacion</code> para mejorarla y relanza solo sobre e
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=d9512ef3">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b4fab1b9">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8458,7 +8463,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bdb11f80">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=277de836">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8480,7 +8485,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=6e171e4e">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=203594b5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8524,7 +8529,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=de5baec1">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=3c149030">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8570,7 +8575,7 @@ El <code>bloque_texto</code> ya viene truncado a 2000 chars (el setup lo hace au
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a607fbff">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c4303a1a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8585,7 +8590,7 @@ para que no invente nombres de clientes.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=98cd9a51">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f9b4936d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8596,7 +8601,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=cf583a7f">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=29caf6e1">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8658,7 +8663,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=21d3420e">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=701ca5eb">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8668,7 +8673,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=1f28d04d">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4c49d54e">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8705,7 +8710,7 @@ El output del modelo debe ser <strong>solo JSON valido</strong> con los 4 campos
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=e4ee7e73">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=a94f4338">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8716,7 +8721,7 @@ La celda detecta los sospechosos. Tu modificas el prompt para corregirlo.</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=40a0ab56">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=19371cdf">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8752,7 +8757,7 @@ La celda detecta los sospechosos. Tu modificas el prompt para corregirlo.</p>
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=671761ee">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7141b39d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8765,7 +8770,7 @@ Generamos borradores especializados por categoria que el agente solo revisa y en
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=72bf58b5">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=770c0fe8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8805,7 +8810,7 @@ Generamos borradores especializados por categoria que el agente solo revisa y en
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=4578af18">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9a0fb67b">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8816,7 +8821,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=036b5e2b">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4f4a5817">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8877,7 +8882,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=96c90a26">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7b4be3e5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8887,7 +8892,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=4f8ff1d2">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=9c421a40">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8921,7 +8926,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=adf24524">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7bf683e5">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -8932,7 +8937,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=be1ec254">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=887351ad">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9017,7 +9022,7 @@ Completa <code>rendimiento</code> (pedir logs, hora del problema) y <code>datos<
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=9b1a1616">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fab0da0d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -9075,7 +9080,7 @@ Donde el coste de equivocarse es mayor (economico, legal, reputacional)?</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=2af7b680">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a9fc9ac8">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
