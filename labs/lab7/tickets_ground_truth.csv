@@ -1,0 +1,84 @@
+ticket_id,categoria,producto,urgencia,nombre_cliente
+1,acceso,SecureLogin Hub,baja,Patricia Álvarez
+2,acceso,TaskBoard Pro,baja,Antonio Vega
+3,acceso,TaskBoard Pro,alta,
+4,acceso,SecureLogin Hub,alta,David Castillo
+5,acceso,CloudSync Pro,alta,Pablo Suárez
+6,acceso,CloudSync Pro,media,Fernando Romero
+7,acceso,SecureLogin Hub,media,Javier Rodríguez
+8,acceso,CloudSync Pro,media,Miguel Torres
+9,acceso,TaskBoard Pro,baja,Elena Núñez
+10,acceso,SecureLogin Hub,media,Carlos Martínez
+11,acceso,TaskBoard Pro,media,María López
+12,acceso,CloudSync Pro,media,Natalia Ortega
+13,acceso,SecureLogin Hub,alta,
+14,acceso,TaskBoard Pro,baja,
+15,acceso,SecureLogin Hub,baja,Miguel Torres
+16,acceso,CloudSync Pro,baja,Rosa Guerrero
+17,acceso,CloudSync Pro,baja,
+18,acceso,CloudSync Pro,alta,Pablo Suárez
+19,acceso,TaskBoard Pro,media,Marta Ramos
+20,acceso,SecureLogin Hub,media,Roberto Jiménez
+21,acceso,TaskBoard Pro,baja,Laura Sánchez
+22,acceso,CloudSync Pro,media,Óscar Mendoza
+23,acceso,CloudSync Pro,baja,María López
+24,acceso,SecureLogin Hub,alta,Lucía Medina
+25,acceso,TaskBoard Pro,media,Roberto Jiménez
+26,acceso,SecureLogin Hub,alta,Sofía Fernández
+27,acceso,SecureLogin Hub,baja,
+28,acceso,CloudSync Pro,media,Carlos Martínez
+29,acceso,CloudSync Pro,baja,Rosa Guerrero
+30,acceso,SecureLogin Hub,alta,Isabel Moreno
+31,rendimiento,TaskBoard Pro,alta,Fernando Romero
+32,rendimiento,DataStream Analytics,alta,
+33,rendimiento,CloudSync Pro,media,María López
+34,rendimiento,CloudSync Pro,media,
+35,rendimiento,CloudSync Pro,alta,
+36,rendimiento,TaskBoard Pro,alta,
+37,rendimiento,DataStream Analytics,media,Óscar Mendoza
+38,rendimiento,CloudSync Pro,media,
+39,rendimiento,DataStream Analytics,media,Pablo Suárez
+40,rendimiento,CloudSync Pro,baja,Irene Peña
+41,rendimiento,CloudSync Pro,alta,Miguel Torres
+42,rendimiento,DataStream Analytics,baja,Antonio Vega
+43,rendimiento,DataStream Analytics,media,David Castillo
+44,rendimiento,TaskBoard Pro,media,Miguel Torres
+45,rendimiento,DataStream Analytics,baja,Lucía Medina
+46,rendimiento,CloudSync Pro,media,Miguel Torres
+47,rendimiento,CloudSync Pro,alta,
+48,rendimiento,DataStream Analytics,alta,Pablo Suárez
+49,rendimiento,DataStream Analytics,baja,Ana García
+50,rendimiento,DataStream Analytics,baja,
+51,rendimiento,DataStream Analytics,baja,Carmen Díaz
+52,rendimiento,CloudSync Pro,media,Marta Ramos
+53,rendimiento,DataStream Analytics,media,
+54,rendimiento,TaskBoard Pro,alta,Fernando Romero
+55,rendimiento,DataStream Analytics,alta,
+56,rendimiento,DataStream Analytics,media,Juan Herrera
+57,rendimiento,DataStream Analytics,alta,Sofía Fernández
+58,rendimiento,CloudSync Pro,baja,Sofía Fernández
+59,rendimiento,TaskBoard Pro,media,
+60,rendimiento,CloudSync Pro,media,Ana García
+61,datos,DataStream Analytics,baja,Fernando Romero
+62,datos,DataStream Analytics,alta,Sofía Fernández
+63,datos,DataStream Analytics,alta,Sergio Delgado
+64,datos,DataStream Analytics,media,
+65,datos,DataStream Analytics,alta,Isabel Moreno
+66,datos,TaskBoard Pro,alta,Sergio Delgado
+67,datos,DataStream Analytics,media,Irene Peña
+68,datos,CloudSync Pro,media,Lucía Medina
+69,datos,TaskBoard Pro,baja,Cristina Molina
+70,datos,CloudSync Pro,alta,Tomás Blanco
+71,datos,CloudSync Pro,media,
+72,datos,CloudSync Pro,baja,Elena Núñez
+73,datos,DataStream Analytics,media,
+74,datos,DataStream Analytics,media,Juan Herrera
+75,datos,TaskBoard Pro,media,Antonio Vega
+76,facturación,PayFlow Manager,media,
+77,facturación,PayFlow Manager,baja,Óscar Mendoza
+78,facturación,PayFlow Manager,alta,Irene Peña
+79,facturación,DataStream Analytics,alta,Juan Herrera
+80,facturación,DataStream Analytics,alta,Juan Herrera
+81,facturación,PayFlow Manager,baja,Sergio Delgado
+82,facturación,PayFlow Manager,media,
+83,facturación,PayFlow Manager,baja,

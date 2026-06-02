@@ -1,0 +1,84 @@
+ticket_id,texto
+1,Mi sesión se cierra automáticamente cada 5 minutos. El tiempo de sesión debería ser de 8 horas según nuestra configuración corporativa. ¿Puede revisar la configuración de nuestro tenant?
+2,cambié de departamento y ahora mi usuario no tiene acceso a las carpetas del nuevo equipo. ¿quién puede darme permisos?
+3,la cuenta de mi equipo está compartida y alguien cambió la contraseña sin avisarnos. ahora nadie puede entrar
+4,no puedo entrar desde hace dos días. el soporte me dijo que estaba resuelto pero sigue igual. este es mi tercer ticket sobre lo mismo.
+5,"Me dirijo a ustedes para reportar un problema de acceso. Mi cuenta parece estar bloqueada tras varios intentos fallidos, aunque estoy seguro de que la contraseña es correcta. Por favor, necesito asistencia cuanto antes."
+6,El sistema de autenticación no me permite entrar. He recibido un código de verificación en dos pasos pero cuando lo introduzco dice que ha expirado. Esto ocurre en menos de 30 segundos desde que llega el SMS.
+7,los usuarios de mi organización tienen login pero no pueden ver los datos del último mes. ¿es un problema de acceso a datos o de los datos en sí?
+8,"Hola, soy el administrador del sistema y necesito transferir la cuenta de propietario a otro usuario. El usuario actual ya no está en la empresa y necesitamos ese acceso."
+9,tras actualizacion de chrome ya no funciona el login automatico con contraseña guardada. tengo que poner las credenciales manualmente cada vez
+10,me dice que no tengo permisos para ver los informes pero antes sí podía. no sé si me han quitado el acceso o si es un bug
+11,no puedo exportar nada porque dice 'no autorizado'. mis compañeros sí pueden. supongo que es un problema de roles
+12,"buenos días, necesito restablecer el acceso para 15 usuarios de golpe tras una migración. ¿hay forma de hacer reset masivo de contraseñas?"
+13,Hemos detectado que varios usuarios de nuestra organización no pueden acceder después de la actualización del sistema del pasado lunes. El problema parece relacionado con los tokens de sesión.
+14,el administrador dice que me ha dado acceso admin pero cuando entro sigo viendo solo opciones básicas. ¿cuánto tarda en propagarse el cambio?
+15,la app del móvil me pide actualización obligatoria pero en la store no aparece ninguna actualización. así no puedo entrar
+16,"hola, necesito acceso de solo lectura para un consultor externo. ¿cómo creo una cuenta con permisos limitados?"
+17,me han dado de alta en el sistema pero no me llegó el email de bienvenida con la contraseña inicial. ¿cómo la obtengo?
+18,Necesito revocar el acceso de un ex-empleado con urgencia. He buscado la opción en el panel pero no la encuentro. Por seguridad es importante que esto se haga cuanto antes.
+19,Necesito restablecer mi contraseña pero el correo electrónico asociado a la cuenta ya no existe. ¿Hay algún proceso alternativo de verificación de identidad?
+20,oye resulta que me he olvidado la contraseña y el link de reseteo tampoco me llega al email... raro
+21,entro en la web pero la extensión del navegador dice que no está autenticada aunque en la web sí aparezco como logueado
+22,entro bien pero a los 2 minutos me echa y tengo que volver a poner la contraseña. todo el día así. insoportable
+23,nuestro cliente externo necesita acceso a un proyecto específico. ¿cómo invito usuarios externos sin darles acceso a todo?
+24,"Buenos días. Mi cuenta aparece como 'Suspendida' pero no he recibido ninguna comunicación al respecto. Por favor, necesito saber el motivo y cómo reactivarla."
+25,Al intentar acceder desde el cliente de escritorio obtengo el error 'Certificado no válido'. El acceso vía web funciona correctamente. ¿Podría indicarme cómo actualizar el certificado del cliente?
+26,"Hola, resulta que mi usuario ha sido desactivado por error según parece. Mi administrador dice que no lo ha desactivado él. Necesito recuperar el acceso para poder trabajar."
+27,"tras el cambio de contraseña entro bien pero el sistema va muy lento, a veces tarda 5 minutos en cargar. ¿puede ser que algo esté mal con mi cuenta?"
+28,mi jefe me dice que me ha dado acceso pero cuando entro dice 'usuario no encontrado'. seguro que algo se ha configurado mal
+29,llevo intentando entrar media hora y la página carga pero nunca termina de cargar el dashboard. ¿es cosa del acceso o del sistema?
+30,ei no puedo entrar!! me dice contraseña incorrecta pero la acabo de cambiar hace 5 min. qué hago
+31,el scheduler de tareas nocturnas no termina antes de las 8am cuando antes acababa a las 3am. los usuarios matutinos no tienen datos frescos
+32,reportamos degradación en el servicio de alertas. las alertas configuradas llegan con 30-40 minutos de retraso respecto al evento que las dispara
+33,Detectamos que el consumo de ancho de banda ha aumentado un 400% sin que hayamos cambiado nada. Sospechamos que algo está haciendo peticiones repetitivas innecesarias.
+34,Detectamos que la sincronización automática entre módulos se ejecuta de forma muy lenta. Una sincronización que tomaba 5 minutos ahora puede tardar más de 2 horas.
+35,el informe semanal tardó 3 horas en generarse esta semana. el mes pasado tardaba 10 minutos. algo va mal
+36,"Buenos días, me dirijo a ustedes para reportar una degradación significativa en el rendimiento de la plataforma. Las consultas que habitualmente tardan 2 segundos ahora superan los 45 segundos. El problema comenzó ayer a las 14:00."
+37,tenemos configurado un job de limpieza de datos que antes tardaba 30 min y ahora tarda 8 horas. no ha cambiado el volumen de datos
+38,el modo de edición colaborativa va muy lento cuando hay más de 3 personas editando simultáneamente. el cursor de los demás va con 10 segundos de retraso
+39,desde que activamos el módulo de ML predictivo el resto del sistema va peor. ¿consumen recursos compartidos?
+40,"La función de autocomplete en los formularios de búsqueda ha empeorado mucho. Antes aparecían sugerencias al instante, ahora hay un retraso de 4-5 segundos entre tecla y sugerencia."
+41,El consumo de CPU del servicio backend está al 95% constante. Hemos revisado nuestros procesos y no encontramos la causa. ¿Puede haber alguna tarea programada que esté en bucle?
+42,hola. ¿hay algún estado de servicio público? la plataforma fue lenta ayer y no sabemos si fue un incidente vuestro o algo local
+43,¿por qué el dashboard va tan lento cuando hay muchos usuarios conectados? a las 9 de la mañana es imposible trabajar
+44,cada vez que hago una búsqueda el navegador se queda colgado. tengo que cerrar la pestaña y volver a entrar. esto pasa desde ayer
+45,"Hola, el modo de presentación de la herramienta va fatal en pantallas 4K. Los gráficos se pixelan y la carga es muy lenta. ¿Hay ajustes de rendimiento para pantallas de alta resolución?"
+46,la sincronización con nuestro CRM tarda demasiado. no sabemos si el cuello de botella está en vuestro lado o en el nuestro
+47,el procesamiento de datos en batch lleva 6 horas y sigue. debería haber terminado en 40 minutos según la documentación
+48,Informo que la generación de informes mensuales está tardando más de 2 horas cuando antes se completaba en 15 minutos. Esto está bloqueando el cierre contable del mes.
+49,Las exportaciones a PDF se están generando con una calidad de imagen degradada y el proceso tarda el doble que antes. No hemos cambiado nada en nuestra configuración.
+50,"la app del móvil va lentísima. cada pantalla tarda 30 segundos en cargar. el wifi va bien, es cosa de la app"
+51,el sistema tarda mucho en cargar los datos del mes pasado. no sé si es un problema de rendimiento o de cómo están guardados los datos
+52,"El módulo de análisis predictivo tarda en procesar conjuntos de datos de más de 10.000 registros. A partir de ese umbral, la interfaz queda congelada y el usuario debe esperar sin feedback."
+53,las consultas SQL personalizadas tardan eternamente. con las consultas predefinidas va bien. ¿es problema de mis queries o del motor?
+54,"Estimado soporte, hemos detectado un aumento considerable en los tiempos de carga del dashboard principal. El equipo técnico ha descartado problemas en nuestra infraestructura local. El P95 de latencia ha pasado de 800ms a 12 segundos."
+55,Cuando hay más de 50 usuarios concurrentes el sistema se degrada completamente. Tenemos licencia para 200 usuarios pero en la práctica no podemos usar más de 50.
+56,el pipeline de datos tarda 3 veces más que antes. hemos añadido más datos pero no tanto como para justificarlo
+57,el servidor de staging va bien pero producción va lento. misma configuración teóricamente. ¿puede ser el volumen de datos?
+58,las actualizaciones en tiempo real del pipeline no aparecen. tengo que refrescar la página cada vez para ver si algo cambió
+59,"Hola, necesito saber si hay límites de rate limiting en la API. Estamos haciendo unas 200 llamadas por minuto y creemos que por eso va lento"
+60,la plataforma va a pedales hoy. tarda un montón en cargar cualquier cosa. ¿qué pasa?
+61,"el campo de país en nuestra base de datos tiene valores inconsistentes: 'España', 'ES', 'Spain', 'esp'. necesitamos normalizarlo"
+62,el informe de ventas muestra números negativos en algunas columnas que deberían ser siempre positivas. parece un bug en el cálculo de agregados
+63,la sincronización con Google Sheets perdió los cambios de las últimas 48 horas. parece que el webhook dejó de funcionar pero no hubo alertas
+64,estamos migrando de vuestra plataforma a otro proveedor. ¿podéis darnos un export completo de todos nuestros datos en formato estándar?
+65,necesito saber si podéis hacer una restauración parcial: solo recuperar los datos de un cliente específico de hace una semana sin afectar al resto
+66,hemos notado que los datos de algunos usuarios tienen campos personales de otros usuarios mezclados. esto es un problema grave de privacidad
+67,los gráficos muestran datos de un año diferente al seleccionado en el filtro. el filtro de fechas parece que no está funcionando correctamente
+68,"Al intentar exportar los datos de clientes del último trimestre, el archivo descargado está corrupto y no puede abrirse con Excel ni con ninguna otra herramienta."
+69,La retención de datos configurada en 24 meses parece no estar funcionando. Tenemos registros de hace 5 años que deberían haberse eliminado automáticamente.
+70,Hemos detectado que los datos del mes de marzo aparecen duplicados en nuestros informes. Cada registro aparece exactamente dos veces. Esto está distorsionando todas nuestras métricas.
+71,al exportar con filtros aplicados el resultado incluye registros que no cumplen los filtros. parece que el export ignora los filtros de la vista
+72,algunos de nuestros registros históricos importados desde 2019 no aparecen en las búsquedas aunque sí están en la exportación. bug de indexación quizás
+73,los datos que veo en la interfaz son del mes pasado aunque hay datos más recientes. parece que la vista no está actualizada
+74,Necesitamos migrar todos nuestros datos históricos a una nueva cuenta. ¿Cuál es el proceso oficial para esto? El volumen es de aproximadamente 50GB.
+75,Los datos importados desde nuestro sistema legado presentan caracteres extraños en los campos de texto en español. Parece un problema de encoding UTF-8 vs Latin-1.
+76,necesito factura con IVA desglosado para presentar en contabilidad. las facturas que me enviáis por email no tienen el IVA separado y mi departamento de finanzas las rechaza
+77,Buenos días. Somos una ONG y queremos saber si ofrecéis descuentos para entidades sin ánimo de lucro. He visto que otras plataformas similares ofrecen hasta un 50%.
+78,"Me han desactivado la cuenta por impago pero el pago sí se realizó hace 3 días. El cargo aparece en mi tarjeta. Por favor, reactiven la cuenta cuanto antes."
+79,"Hola, me han cobrado dos veces la suscripción de este mes. En mi banco aparecen dos cargos del mismo importe con fecha del día 1. Por favor, necesito el reembolso del cargo duplicado."
+80,"Buenos días. La factura de este mes es incorrecta: nos están cobrando por 25 usuarios pero solo tenemos 10 activos. Por favor, necesitan revisar y corregir el importe."
+81,"hola, ¿puedo añadir más usuarios a mi plan actual sin cambiar el plan entero? necesito 5 usuarios más solo para este proyecto de 2 meses"
+82,La tarjeta de crédito registrada caduca el mes que viene y no encuentro dónde actualizarla en la plataforma. No quiero que se interrumpa el servicio.
+83,"hola, quiero cambiar del plan mensual al anual para aprovechar el descuento del 20% que vi en la web. ¿cómo se hace y cuándo empieza a aplicar?"
